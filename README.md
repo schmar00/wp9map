@@ -10,12 +10,12 @@ This template should help get you started developing with Svelte in Vite.
 ```
 npm create vite@latest  
 ```  
--> kw-app  
+-> wp9map  
 select Svelte  
 select JavaScript  
   
 ```  
-cd kw-app  
+cd wp9map  
 npm install  
 npm run dev  
 ```  
