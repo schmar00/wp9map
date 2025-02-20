@@ -85,6 +85,10 @@ export const descQuery_kw = `PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     {?o dcterms:subject ?kw; dcterms:relation ?s; rdfs:label ?l .}
      UNION
     {?o dcterms:subject ?k; dcterms:relation ?s; rdfs:label ?l .}
+     UNION
+    {?s dcterms:subject ?kw; rdfs:label ?l . BIND(?s AS ?o)}
+     UNION
+    {?s dcterms:subject ?k; rdfs:label ?l . BIND(?s AS ?o)}
     OPTIONAL{?o dcterms:identifier ?id .}
     OPTIONAL{?o dcterms:description ?desc .} 
     FILTER(!REGEX(STR(?o),'earth/ncl'))
@@ -108,6 +112,10 @@ export const semQuery = `PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     {?o dcterms:subject ?kw; dcterms:relation ?s . BIND(1 AS ?x)}
     UNION
     {?o dcterms:subject ?k; dcterms:relation ?s . }
+    UNION
+    {?s dcterms:subject ?kw .}
+    UNION
+    {?s dcterms:subject ?k .}
     ?s wgs:lat_long ?co; rdfs:label ?l . FILTER(lang(?l)='')
     FILTER(REGEX(STR(?s),'org.europe'))
     OPTIONAL{?s dcterms:title ?t; eurio:shortForm ?sf; dcterms:identifier ?i .}

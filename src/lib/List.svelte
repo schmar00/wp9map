@@ -2,6 +2,7 @@
     import * as config from './config.js'
     import * as scripts from './scripts.js' 
     import Egdi from '../assets/egdi.png';
+    import Inspire from '../assets/inspire.png';
     import Smw from '../assets/smw.png'
     import OpenAIRE from '../assets/openaire.svg'
     import OpenAIRE2 from '../assets/openaire2.png'
@@ -14,12 +15,14 @@
         //console.log(item)
         if(item.id.indexOf('proj.europe') > -1){
 
-        } else if(item.id.indexOf('corda') > -1){
+        } else if((item.id.indexOf('corda') > -1) || (item.id.indexOf('anr') > -1)){
             logo = `<a href="https://explore.openaire.eu/search/find/projects?fv0=${encodeURIComponent(item.title)}&f0=q&page=1" target="_blank"><img src=${OpenAIRE} alt="x" class="h-auto max-w-16" /></a>`
         } else if(item.id.indexOf('keep') > -1){
             logo = `<a href="${item.uri}" target="_blank"><img src=${Interreg} alt="x" class="h-auto max-w-16" /></a>`
         } else if(item.id.indexOf('egdi') > -1){
             logo = `<a href="${item.uri}" target="_blank"><img src=${Egdi} alt="x" class="h-auto max-w-6" /></a>`
+        } else if(item.id.indexOf('europa') > -1){
+            logo = `<a href="${item.uri}" target="_blank"><img src=${Inspire} alt="x" class="h-auto max-w-6" /></a>`
         } else if(item.id.indexOf('wp9') > -1){
             logo = `<a href="${item.uri.replace('wp9.geoinformation.dev','wp9.geoinformation.dev/index.php')}" target="_blank"><img src=${Smw} alt="x" class="h-auto max-w-6" /></a>`
         } else {} 

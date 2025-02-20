@@ -18,8 +18,8 @@
     - a map of Europe .. 
     <span class="font-bold">Geological Survey Organisations</span> plus <span class="font-bold">project-related partner</span> institutions .. <br>
     by scientific areas <span class="text-base">(linked keywords from <a href="https://ror.org">ROR</a>, <a href="https://explore.openaire.eu">OpenAIRE</a>, 
-    <a href="https://cordis.europa.eu">CORDIS</a>, <a href="https://keep.eu">Interreg</a>, <a href="https://www.wikidata.org">WikiData</a>, <a href="https://metadata.europe-geology.eu">EGDI</a>, 
-    <a href="https://wp9.geoinformation.dev">GSEU-WP9</a>, ..)</span>
+    <a href="https://cordis.europa.eu">CORDIS</a>, <a href="https://keep.eu">Interreg</a>, <a href="https://www.wikidata.org">WikiData</a>, <a href="https://metadata.europe-geology.eu">EGDI metadata</a>, 
+    <a href="https://wp9.geoinformation.dev">GSEU Yellow Pages</a>, <a href="https://data.europa.eu/en">European data</a>, ..)</span>
     
 </p>
 
