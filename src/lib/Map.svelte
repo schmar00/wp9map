@@ -84,8 +84,19 @@
                 sort1:b.sort1==undefined?'':b.sort1.value, 
                 sort2:b.sort2==undefined?'':b.sort2.value,
                 id:b.ID.value
-            })).filter(c => c.id.indexOf('proj.europe') == -1));
+            })).filter(c => c.id.indexOf('proj.europe') == -1))
+            .then(a => descList = uniqueLinks(descList));
 		    console.log('descList: ', descList);
+    }
+
+    function uniqueLinks(dL){
+        let unique = [];
+        dL.forEach(a => {
+            if(!unique.some(b => b.title == a.title)){
+                unique.push(a);
+            }
+        });
+        return unique;
     }
 
     function mrkSize(m){

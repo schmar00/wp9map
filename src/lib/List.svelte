@@ -39,7 +39,7 @@
 
 <dl class="transition delay-700 ease-in-out max-w-md text-left text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
     {#if descList.length > 0 }     
-      {#each descList.reverse() as item}
+      {#each descList as item}
         <div class="py-3">
             {#if item.sort1 == 'true' || item.sort2 == 'true'}
             <dt class="text-sm font-semibold text-[#0078A8]">
