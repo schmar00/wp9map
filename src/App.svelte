@@ -3,7 +3,7 @@
     import Category from "./lib/Category.svelte";
     import Map from "./lib/Map.svelte";
     import List from "./lib/List.svelte";
-    import gifmovie from "/src/map720.gif";
+    import gifmovie from "/src/wp9map.gif";
 
     let selectedCategory, searchTerm, descList, markerArr
     

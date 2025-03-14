@@ -53,3 +53,6 @@ export default {
   plugins: []  
 };  
 ```
+
+  
+![](https://github.com/schmar00/wp9map/blob/main/src/wp9map.gif)
